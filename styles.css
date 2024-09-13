@@ -71,6 +71,7 @@ body{
 .sidebar-link{
     text-decoration: none;
     color: white;
+    padding-top: 0.5rem;
     transition: ease-in 150ms;
 }
 .sidebar-link:hover{
@@ -177,6 +178,7 @@ body{
 .welcome-message{
     padding-bottom: 0.5rem;
     font-size: 0.7rem;
+    font-weight: bold;
 }
 .welcome-name{
     font-weight: bold;
@@ -208,4 +210,10 @@ body{
     cursor:pointer;
     box-shadow: none;
     background-color: rgb(46, 138, 199);
+}
+
+.bottom-dashboard-container{
+    
+    height: 100vh;
+    border: solid 1px red;
 }
