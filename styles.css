@@ -1,0 +1,211 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.master-container{
+    display: flex;
+    height:100vh;
+}
+
+.sidebar-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(53, 163, 236);
+    color: white;  
+    min-width: 200px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(103, 103, 103, 0.8);
+    transition: ease-in 200ms;
+}
+.sidebar-container:hover{
+    box-shadow: none;
+}
+
+.sidebar-logo-container{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+.drh-icon{
+    display: block;
+    width: 30px;
+}
+.logo-text-container{
+    padding-left: 0.725rem;
+
+}
+.logo-text{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.sidebar-main-btns-container{
+    display:flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.sidebar-btn-container{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+}
+.sidebar-icon-container{
+    display: flex;
+}
+.sidebar-icon{
+    width: 1rem;
+    padding-right: 1rem;
+    filter: invert(100%);
+}
+.sidebar-text{
+    font-weight: bold;
+}
+.sidebar-misc-btns-container{
+    padding-top: 2rem;
+}
+.sidebar-link{
+    text-decoration: none;
+    color: white;
+    transition: ease-in 150ms;
+}
+.sidebar-link:hover{
+    padding-left: 10px;
+}
+.sidebar-misc-btns-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 30px;
+}
+.search-bar-container{
+    padding-top:1px;
+    padding-left: 10px;
+}
+#searchbar{
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top:2px;
+    padding-right: 20px;
+    height: 20px;
+    border: none;
+    outline: white;
+    color: black;
+    width: 300px;
+    box-shadow: 1px 1px 2px 1px rgba(53, 163, 236, 0.3);
+    transition: ease-in 200ms;
+}
+#searchbar:focus{
+    outline: rgba(53, 163, 236, 0.5) solid 1px;
+    
+}
+#searchbar:hover{
+    box-shadow: none;
+}
+#search-icon{
+    padding-top:3px;
+    width: 1.2rem;
+}
+
+.dashboard-container{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.top-dashboard-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    border-bottom: solid 3px rgb(226, 226, 226);
+}
+.top-top-half-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.noti-profile-name-container{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 1rem;
+}
+.noti-profile-name-item{
+    padding-right: 20px;
+}
+#bell-icon{
+    width: 18px;
+}
+#dog-icon-small{
+    width:36px;
+    border-radius: 50%;
+}
+#dog-icon-large{
+    width:64px;
+    border-radius: 50%;
+}
+.noti-profile-name-text{
+    font-weight: bold;
+}
+
+.top-bottom-half-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+}
+.welcome-container{
+    display: flex;
+    align-items: center;
+}
+.welcome-text-container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.welcome-message{
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+.welcome-name{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.new-upload-share-container{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+.new-upload-share-button-container{
+    padding-right: 1rem;
+}
+.new-upload-share-button{
+    background-color: rgb(53, 163, 236);
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    transition: ease-in 200ms;
+    box-shadow: 2px 2px 4px 1px rgba(53, 163, 236, 0.3);
+}
+.new-upload-share-button:hover{
+    cursor:pointer;
+    box-shadow: none;
+    background-color: rgb(46, 138, 199);
+}
