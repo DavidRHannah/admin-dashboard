@@ -1,191 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="master-container">
-        <div class="sidebar-container">
-            <div class="sidebar-logo-container">
-                <div class="logo-icon-container">
-                    <img class="drh-icon" src="./res/drh-logo-boxed.png" alt="DRH logo icon">
-                </div>
-                <div class="logo-text-container">
-                    <span class="logo-text">Dashboard</span>
-                </div>
-            </div>
-
-            <div class="sidebar-main-btns-container">
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="home-icon sidebar-icon" src="./res/home-icon.png" alt="home icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">Home</span>
-                        </div>
-                    </div>
-                </a>
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="profile-icon sidebar-icon" src="./res/profile-icon.png" alt="profile icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">Profile</span>
-                        </div>
-                    </div>
-                </a>
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="message-icon sidebar-icon" src="./res/message-icon.png" alt="messages icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">Messages</span>
-                        </div>
-                    </div>
-                </a>
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="history-icon sidebar-icon" src="./res/history-icon.png" alt="history icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">History</span>
-                        </div>
-                    </div>
-                </a>
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="tasks-icon sidebar-icon" src="./res/tasks-icon.png" alt="tasks icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">Tasks</span>
-                        </div>
-                    </div>
-                </a>
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="community-icon sidebar-icon" src="./res/community-icon.png" alt="community icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">Communities</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-                
-            <div class="sidebar-misc-btns-container">
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="settings-icon sidebar-icon" src="./res/settings-icon.png" alt="settings icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">Settings</span>
-                        </div>
-                    </div>
-                </a>
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="support-icon sidebar-icon" src="./res/support-icon.png" alt="support icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">Support</span>
-                        </div>
-                    </div>
-                </a>
-            
-                <a class="sidebar-link" href="">
-                    <div class="sidebar-btn-container">
-                        <div class="sidebar-icon-container">
-                            <img class="privacy-icon sidebar-icon" src="./res/privacy-icon.png" alt="privacy icon">
-                        </div>
-                        <div class="sidebar-text-container">
-                            <span class="sidebar-text">Privacy</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
+      <div class="sidebar-container">
+        <div class="sidebar-logo-container">
+          <div class="logo-icon-container">
+            <img class="drh-icon" src="./res/drh-logo-boxed.png" alt="DRH logo icon">
+          </div>
+          <div class="logo-text-container">
+            <span class="logo-text">Dashboard</span>
+          </div>
         </div>
-
-        <div class="dashboard-container">
-            <div class="top-dashboard-container">
-                <div class="top-top-half-container">
-                    <div class="search-container">
-                        <div class="search-icon-container">
-                            <img id="search-icon" src="./res/search-icon.svg" alt="search icon">
-                        </div>
-                        <div class="search-bar-container">
-                            <input id="searchbar" class="search" type="text" >
-                        </div>
-                    </div>
-                    <div class="noti-profile-name-container">
-                        <div class="noti-icon-container noti-profile-name-item">
-                            <img id="bell-icon" src="./res/bell-icon.png" alt="notification bell icon">
-                        </div>
-                        <div class="prof-icon-container noti-profile-name-item">
-                            <img id="dog-icon-small" class="profile" src="./res/hipster-dog.png" alt="dog with sunglasses pixelart">
-                        </div>
-                        <div class="name-container noti-profile-name-item">
-                            <span class="noti-profile-name-text">
-                                Max Murphy
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="top-bottom-half-container">
-                    <div class="welcome-container">
-                        <div class="welcome-icon-container">
-                            <img src="./res/hipster-dog.png" alt="hip dog" id="dog-icon-large">
-                        </div>
-                        <div class="welcome-text-container">
-                            <div class="welcome-message">Hi there,</div>
-                            <div class="welcome-name">Max Murphy (@murphy)</div>
-                        </div>
-                    </div>
-                    <div class="new-upload-share-container">
-                        <div class="new-upload-share-button-container">
-                            <button class="new-upload-share-button">New</button>
-                        </div>
-                        <div class="new-upload-share-button-container">
-                           <button class="new-upload-share-button">Upload</button>
-                        </div>
-                        <div class="new-upload-share-button-container">
-                            <button class="new-upload-share-button">Share</button>
-                        </div>
-                    </div>
-                </div>            
+        <div class="sidebar-main-btns-container">
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="home-icon sidebar-icon" src="./res/home-icon.png" alt="home icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">Home</span>
+              </div>
             </div>
-            <div class="bottom-dashboard-container">
-                <div class="bottom-dashboard-projects-container">
-                    <div class="projects-container-text">Your Projects</div>
-                    <div class="projects-container-content">
-
-                    </div>
-                </div>
-                <div class="bottom-dashboard-announcements-trending-container">
-                    <div class="bottom-dashboard-announcements-container">
-                        <div class="announcements-container-text">Announcements</div>
-                        <div class="announcements-container-content"></div>
-                    </div>
-                    <div class="bottom-dashboard-trending-container">
-                        <div class="trending-container-text">Trending</div>
-                        <div class="trending-container-content"></div>
-                    </div>
-                </div>
-                
+          </a>
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="profile-icon sidebar-icon" src="./res/profile-icon.png" alt="profile icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">Profile</span>
+              </div>
             </div>
+          </a>
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="message-icon sidebar-icon" src="./res/message-icon.png" alt="messages icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">Messages</span>
+              </div>
+            </div>
+          </a>
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="history-icon sidebar-icon" src="./res/history-icon.png" alt="history icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">History</span>
+              </div>
+            </div>
+          </a>
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="tasks-icon sidebar-icon" src="./res/tasks-icon.png" alt="tasks icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">Tasks</span>
+              </div>
+            </div>
+          </a>
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="community-icon sidebar-icon" src="./res/community-icon.png" alt="community icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">Communities</span>
+              </div>
+            </div>
+          </a>
         </div>
+        <div class="sidebar-misc-btns-container">
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="settings-icon sidebar-icon" src="./res/settings-icon.png" alt="settings icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">Settings</span>
+              </div>
+            </div>
+          </a>
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="support-icon sidebar-icon" src="./res/support-icon.png" alt="support icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">Support</span>
+              </div>
+            </div>
+          </a>
+          <a class="sidebar-link" href="">
+            <div class="sidebar-btn-container">
+              <div class="sidebar-icon-container">
+                <img class="privacy-icon sidebar-icon" src="./res/privacy-icon.png" alt="privacy icon">
+              </div>
+              <div class="sidebar-text-container">
+                <span class="sidebar-text">Privacy</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="dashboard-container">
+        <div class="top-dashboard-container">
+          <div class="top-top-half-container">
+            <div class="search-container">
+              <div class="search-icon-container">
+                <img id="search-icon" src="./res/search-icon.svg" alt="search icon">
+              </div>
+              <div class="search-bar-container">
+                <input id="searchbar" class="search" type="text" >
+              </div>
+            </div>
+            <div class="noti-profile-name-container">
+              <div class="noti-icon-container noti-profile-name-item">
+                <img id="bell-icon" src="./res/bell-icon.png" alt="notification bell icon">
+              </div>
+              <div class="prof-icon-container noti-profile-name-item">
+                <img id="dog-icon-small" class="profile" src="./res/hipster-dog.png" alt="dog with sunglasses pixelart">
+              </div>
+              <div class="name-container noti-profile-name-item">
+                <span class="noti-profile-name-text">
+                Max Murphy
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="top-bottom-half-container">
+            <div class="welcome-container">
+              <div class="welcome-icon-container">
+                <img src="./res/hipster-dog.png" alt="hip dog" id="dog-icon-large">
+              </div>
+              <div class="welcome-text-container">
+                <div class="welcome-message">Hi there,</div>
+                <div class="welcome-name">Max Murphy (@murphy)</div>
+              </div>
+            </div>
+            <div class="new-upload-share-container">
+              <div class="new-upload-share-button-container">
+                <button class="new-upload-share-button">New</button>
+              </div>
+              <div class="new-upload-share-button-container">
+                <button class="new-upload-share-button">Upload</button>
+              </div>
+              <div class="new-upload-share-button-container">
+                <button class="new-upload-share-button">Share</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-dashboard-container">
+          <div class="bottom-dashboard-projects-container">
+            <div class="projects-container-text">Your Projects</div>
+            <div class="projects-container-content">
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="card-text-container">
+                    <div class="card-title">Project Alpha</div>
+                    <div class="card-blurb">
+                      Lorem ipsum odor amet, consectetuer adipiscing elit. 
+                      Netus finibus fermentum proin odio morbi in. 
+                      Condimentum sapien habitant cursus nisl eu congue enim nibh. 
+                      Quam blandit blandit dui molestie euismod litora. 
+                      Habitant finibus non faucibus dictum.
+                    </div>
+                  </div>
+                  <div class="card-button-container">
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/favorite-icon.png" alt="star icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/eye-icon.png" alt="view icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/link-icon.png" alt="link icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="card-text-container">
+                    <div class="card-title">Project Alpha</div>
+                    <div class="card-blurb">A web application for task management.</div>
+                  </div>
+                  <div class="card-button-container">
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/favorite-icon.png" alt="star icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/eye-icon.png" alt="view icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/link-icon.png" alt="link icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="card-text-container">
+                    <div class="card-title">Project Alpha</div>
+                    <div class="card-blurb">A web application for task management.</div>
+                  </div>
+                  <div class="card-button-container">
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/favorite-icon.png" alt="star icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/eye-icon.png" alt="view icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/link-icon.png" alt="link icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="card-text-container">
+                    <div class="card-title">Project Alpha</div>
+                    <div class="card-blurb">A web application for task management.</div>
+                  </div>
+                  <div class="card-button-container">
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/favorite-icon.png" alt="star icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/eye-icon.png" alt="view icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/link-icon.png" alt="link icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="card-text-container">
+                    <div class="card-title">Project Alpha</div>
+                    <div class="card-blurb">A web application for task management.</div>
+                  </div>
+                  <div class="card-button-container">
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/favorite-icon.png" alt="star icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/eye-icon.png" alt="view icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/link-icon.png" alt="link icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="card-text-container">
+                    <div class="card-title">Project Alpha</div>
+                    <div class="card-blurb">A web application for task management.</div>
+                  </div>
+                  <div class="card-button-container">
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/favorite-icon.png" alt="star icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/eye-icon.png" alt="view icon">
+                    </button>
+                    <button class="project-button">
+                      <img class="project-button-icon" src="./res/link-icon.png" alt="link icon">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-dashboard-announcements-trending-container">
+            <div class="bottom-dashboard-announcements-container">
+              <div class="announcements-container-text">Announcements</div>
+              <div class="announcements-container-content">
+                <div class="announcement-item">
+                    <div class="announcement-title">Server Maintenance</div>
+                    <div class="announcement-blurb">Our servers will undergo maintenance on the 20th of September from 10 PM.</div>
+                </div>
+                <div class="announcement-item">
+                    <div class="announcement-title">Community Share Day</div>
+                    <div class="announcement-blurb">Our servers will undergo maintenance on the 20th of September from 10 PM.</div>
+                </div>
+                <div class="announcement-item">
+                    <div class="announcement-title">Updated Privacy Policy</div>
+                    <div class="announcement-blurb">Our servers will undergo maintenance on the 20th of September from 10 PM.</div>
+                </div>
+              </div>
+            </div>
+            <div class="bottom-dashboard-trending-container">
+              <div class="trending-container-text">Trending</div>
+              <div class="trending-container-content">
+                <div class="user-app-container">
+                  <div class="profile-container">
+                    <img class="user-profile-pic" src="./res/cute-fox.png" alt="User Profile Picture">
+                  </div>
+                  <div class="app-blurb-text-container">
+                    <span class="user-handle">@tyreekbill</span>
+                    <span class="app-name">Sprint Tracker</span>
+                  </div>
+                </div>
+                <div class="user-app-container">
+                  <div class="profile-container">
+                    <img class="user-profile-pic" src="./res/angry-owl.png" alt="User Profile Picture">
+                  </div>
+                  <div class="app-blurb-text-container">
+                    <span class="user-handle">@jamorano</span>
+                    <span class="app-name">Basket Bets</span>
+                  </div>
+                </div>
+                <div class="user-app-container">
+                  <div class="profile-container">
+                    <img class="user-profile-pic" src="./res/green-bull.png" alt="User Profile Picture">
+                  </div>
+                  <div class="app-blurb-text-container">
+                    <span class="user-handle">@davehenderson</span>
+                    <span class="app-name">FightNight Pro</span>
+                  </div>
+                </div>
+                <div class="user-app-container">
+                  <div class="profile-container">
+                    <img class="user-profile-pic" src="./res/wizard-cat.png" alt="User Profile Picture">
+                  </div>
+                  <div class="app-blurb-text-container">
+                    <span class="user-handle">@minertown</span>
+                    <span class="app-name">MinerTown: Ghost Edition</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
