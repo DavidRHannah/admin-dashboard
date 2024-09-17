@@ -1,28 +1,31 @@
 *{
-    /* border: solid 1px red; */
+    font-family: comic, arial, sans-serif;
 }
-
+div {
+    transition: all 50ms ease-in-out;
+}
 body{
     margin:0;
     padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(240,240,240);
 }
 
 .master-container{
     display: flex;
-    height:100vh;
+    height:100%;
 }
 
 .sidebar-container{
     display: flex;
     flex-direction: column;
+    position: sticky;
     background-color: rgb(53, 163, 236);
     color: white;  
     min-width: 200px;
     padding-left: 10px;
     box-shadow: 1px 1px 10px 1px rgba(103, 103, 103, 0.8);
     transition: ease-in 200ms;
-    z-index: 1000;
+    z-index: 2;
 }
 .sidebar-container:hover{
     box-shadow: none;
@@ -131,12 +134,17 @@ body{
 .top-dashboard-container{
     display: flex;
     flex-direction: column;
+    position: sticky;
+    min-width: auto;
+    z-index: 1;
     padding-top: 10px;
+    background-color: #fff;
     border-bottom: solid 3px rgb(226, 226, 226);
 }
 .top-top-half-container{
     display: flex;
     justify-content: space-between;
+    flex-shrink: 1;
     align-items: center;
 }
 .noti-profile-name-container{
@@ -150,10 +158,10 @@ body{
 }
 #bell-icon{
     width: 18px;
-    transform: 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 #bell-icon:hover{
-    transform: translateY(-0.1rem);
+    transform: scale(1.1);;
 }
 #dog-icon-small{
     width:36px;
@@ -228,11 +236,10 @@ body{
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    height: 100vh;
-    background-color: rgb(237, 237, 237);
+    min-height: 100vh;
 }
 .bottom-dashboard-projects-container{
-    width: 60%;
+    max-width: 60%;
     padding-bottom: 2rem;
 }
 .projects-container-text{
@@ -241,14 +248,14 @@ body{
 }
 .projects-container-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
 }
+  
 .project-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 15rem;
     background-color: #fff;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -258,7 +265,7 @@ body{
     background: linear-gradient(to right, rgb(247, 155, 94) 3%, white 3%);
 }
 .project-card:hover {
-    transform: translateY(-3px); /* Subtle hover effect */
+    transform: translateY(-3px);
 }
 .project-card-inner {
     display: flex;
@@ -267,7 +274,7 @@ body{
     padding-top: 1rem;
 }
 .card-text-container {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     overflow-wrap: break-word; 
 }
 .card-title {
@@ -280,7 +287,7 @@ body{
 }
 .card-blurb {
     font-size: 0.8rem;
-    color: #666;
+    color: #667;
     padding-right: 1.5rem;
 }
 .card-button-container {
@@ -303,17 +310,18 @@ body{
     transition: all 200ms ease-in-out;
 }
 .project-button-icon:hover{
-    transform: scale(1.05); /* Increase size slightly on hover */
+    transform: scale(1.05);
 }
 
 .bottom-dashboard-announcements-trending-container{
     display: flex;
     flex-direction: column;
-    margin-left: 1rem;
+    margin-left: 0.25rem;
 }
 
 .bottom-dashboard-announcements-container{
     padding-bottom: 2rem;
+    max-width: 15rem;
 }
 .announcements-container-text{
     font-weight: bold;
@@ -371,5 +379,89 @@ body{
 }
 .app-name{
     font-size: 0.7rem;
-    color: #666;
+    color: #667;
+}
+
+@media (max-width: 1200px) {
+    .projects-container-content {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 0.8rem;
+    }
+    .new-upload-share-button{
+        font-size: small;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar-container {
+        min-width: 160px;
+        padding: 0;
+    }
+    .drh-icon{
+        width: 1.8rem;
+    }
+    .logo-text{
+        font-size: small;
+    }
+    .sidebar-link{
+        font-size: small;
+    }
+    .projects-container-content {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-icon-container img{
+        max-width: 40px;
+    }
+    .sidebar-container {
+        min-width: 140px;
+        padding: 0;
+    }
+    .drh-icon{
+        width: 1rem;
+    }
+    .logo-text{
+        font-size: x-small;
+    }
+    .sidebar-link{
+        font-size: x-small;
+    }
+    .projects-container-content {
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        gap: 0.5rem;
+    }
+    .bottom-dashboard-container {
+        padding: 1rem;
+    }
+    .project-card {
+        padding: 0.75rem;
+    }
+    .new-upload-share-button{
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar-container {
+        min-width: 120px;
+    }
+
+    #searchbar {
+        width: 80%;
+    }
+
+    .projects-container-content {
+        grid-template-columns: repeat(4rem, 1fr);
+    }
+
+    .welcome-name {
+        font-size: 1rem;
+    }
+
+    .project-card {
+        padding: 0.5rem;
+    }
 }
