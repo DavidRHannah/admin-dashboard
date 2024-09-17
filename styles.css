@@ -1,3 +1,19 @@
+:root {
+    --background-color: rgb(240, 240, 240);
+    --sidebar-color: rgb(53, 163, 236);
+    --text-color: black;
+    --card-background: #fff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+    --background-color: rgb(24, 24, 24);
+    --sidebar-color: rgb(30, 30, 30);
+    --text-color: white;
+    --card-background: rgb(50, 50, 50);
+    --card-shadow: rgba(255, 255, 255, 0.1);
+}
+
 *{
     font-family: comic, arial, sans-serif;
 }
@@ -228,7 +244,6 @@ body{
     box-shadow: none;
     background-color: rgb(46, 138, 199);
 }
-
 .bottom-dashboard-container{
     display: flex;
     justify-content: space-between;
@@ -254,7 +269,6 @@ body{
   
 .project-card {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     background-color: #fff;
     padding-left: 1.5rem;
